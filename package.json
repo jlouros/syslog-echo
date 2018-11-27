@@ -1,0 +1,33 @@
+{
+  "name": "syslog-micro",
+  "version": "1.0.0",
+  "description": "Syslog Server",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "test": "ts-node test/self-hosted-server_client.ts",
+    "test:no-server": "ts-node test/client.ts",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "keywords": [
+    "syslog",
+    "syslog-server"
+  ],
+  "author": "https://github.com/jlouros",
+  "license": "MIT",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/jlouros/syslog-micro"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "nodemon": "^1.18.7",
+    "syslog-client": "^1.1.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {}
+}

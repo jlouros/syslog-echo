@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  syslog-micro:
+    image: syslog-micro
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 514:514
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect index.js
