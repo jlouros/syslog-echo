@@ -1,5 +1,5 @@
 {
-  "name": "syslog-micro",
+  "name": "syslog-echo",
   "version": "1.0.0",
   "description": "Syslog Server",
   "main": "src/server.js",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
       "type": "git",
-      "url": "https://github.com/jlouros/syslog-micro"
+      "url": "https://github.com/jlouros/syslog-echo"
   },
   "devDependencies": {
     "@types/node": "^10.12.10",

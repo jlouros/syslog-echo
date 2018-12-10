@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  syslog-micro:
-    image: syslog-micro
+  syslog-echo:
+    image: syslog-echo
     build: .
     environment:
       NODE_ENV: development

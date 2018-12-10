@@ -1,12 +1,14 @@
-# syslog-micro
+# syslog-echo
 
-*Work in progress...*
+just echo messages sent to syslog
 
 ## docker
 
-Build image `docker build --rm -f "Dockerfile" -t jlouros/syslog-micro:latest .`
+Build image (alpine) `docker build --rm -f ".docker/alpine/Dockerfile" -t jlouros/syslog-echo:alpine -t jlouros/syslog-echo:latest .`
 
-Run container `docker run -it --rm -p 514:514/udp jlouros/syslog-micro`
+Build image (Nano Server) `docker build --rm -f ".docker/nanoserver/Dockerfile" -t jlouros/syslog-echo:nanoserver .`
+
+Run container `docker run -it --rm -p 514:514/udp jlouros/syslog-echo`
 
 ## refernces
 
