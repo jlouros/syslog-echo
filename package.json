@@ -18,8 +18,8 @@
   "author": "https://github.com/jlouros",
   "license": "MIT",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/jlouros/syslog-echo"
+    "type": "git",
+    "url": "https://github.com/jlouros/syslog-echo"
   },
   "devDependencies": {
     "@types/node": "^10.12.10",
