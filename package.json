@@ -22,12 +22,12 @@
     "url": "https://github.com/jlouros/syslog-echo"
   },
   "devDependencies": {
-    "@types/node": "^10.12.10",
-    "nodemon": "^1.18.7",
+    "@types/node": "^10.17.17",
+    "nodemon": "^1.19.4",
     "syslog-client": "^1.1.1",
     "ts-node": "^7.0.1",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "tslint": "^5.20.1",
+    "typescript": "^3.8.3"
   },
   "dependencies": {}
 }

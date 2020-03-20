@@ -1,9 +1,9 @@
-FROM stefanscherer/node-windows:10.14.1-nanoserver-2016 AS base
+FROM stefanscherer/node-windows:10.16-nanoserver-2016 AS base
 ENV NODE_ENV production
 WORKDIR /src/app
 EXPOSE 514/udp
 
-FROM stefanscherer/node-windows:10.14.1-nanoserver-2016 AS build
+FROM stefanscherer/node-windows:10.16-nanoserver-2016 AS build
 WORKDIR /src/bld
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --silent
